@@ -1,0 +1,123 @@
+/* mesas_v2.css */
+
+/* Layout & Container */
+.main-container-mesas {
+    background-color: #f8f9fa;
+    min-height: calc(100vh - 70px);
+}
+
+/* KPI Cards Modernas */
+.card-kpi {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #edf2f7;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.kpi-label { font-size: 0.85rem; color: #718096; font-weight: 600; text-transform: uppercase; }
+.kpi-value { font-size: 1.8rem; font-weight: 800; margin: 0; color: #2d3748; }
+
+/* Colores Semánticos Sutiles */
+.libres { border-left: 5px solid #48bb78; }
+.ocupadas { border-left: 5px solid #f56565; }
+.reservadas { border-left: 5px solid #4299e1; }
+.cobrar { border-left: 5px solid #ed8936; }
+
+/* Input Moderno */
+.input-group-modern {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 0.6rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.input-group-modern input { border: none; outline: none; width: 100%; color: #4a5568; }
+
+/* Grid de Mesas - ESPACIADO MEJORADO */
+.mesa-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 2rem; /* Más espacio entre mesas */
+}
+
+/* Mesa Card V2 */
+.mesa-card-v2 {
+    background: #fff;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    padding: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.mesa-card-v2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.mesa-card-v2.active {
+    border-color: #dc7448;
+    background: #fffaf0;
+}
+
+/* Icono Circular de la Mesa */
+.mesa-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7fafc;
+    border: 2px solid #edf2f7;
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+
+/* Estados por colores de fondo sutiles */
+.libre .mesa-circle { color: #38a169; border-color: #c6f6d5; }
+.ocupada .mesa-circle { color: #e53e3e; border-color: #fed7d7; }
+.reservada .mesa-circle { color: #3182ce; border-color: #bee3f8; }
+.cobrar .mesa-circle { color: #dd6b20; border-color: #feebc8; }
+
+.mesa-badge-status {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 6px;
+    background: #edf2f7;
+}
+
+/* Botones RestoControl */
+.btn-primary-resto {
+    background: #dc7448;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+.btn-primary-resto:hover { background: #c5633a; }
+
+.detail-pill {
+    background: #edf2f7;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #4a5568;
+}
