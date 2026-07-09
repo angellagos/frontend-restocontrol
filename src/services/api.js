@@ -2,7 +2,7 @@ import axios from 'axios'
 
 // 1. Crear la instancia base de Axios
 const api = axios.create({
-    baseURL: 'http://localhost:8080/api', // Asegúrate de que coincida con el puerto de tu backend
+    baseURL: 'http://DemoALB-832014469.us-east-1.elb.amazonaws.com/restocontrol/api', // Asegúrate de que coincida con el puerto de tu backend
     headers: {
         'Content-Type': 'application/json'
     }
